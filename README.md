@@ -1,16 +1,48 @@
-# React + Vite
+# Yashraj Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Welcome to my personal developer portfolio! 🚀
 
-Currently, two official plugins are available:
+I'm **Yashraj**, a B.Tech Computer Science student passionate about **Web Development, AI, and real-world problem solving**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 👨‍💻 About Me
 
-## React Compiler
+- 🎓 B.Tech CSE Student
+- 💻 Interested in Web Development & AI
+- ⚛️ Currently learning React and Full-Stack Development
+- 🧠 Learning Data Structures & Algorithms in C++
+- 🚀 Building practical projects to strengthen my development skills
+- 💡 Enthusiast in real-world problem solving
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the Oxlint configuration
+- HTML
+- CSS
+- JavaScript
+- React
+- C++
+- Git & GitHub
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 🚀 Projects
+
+### Nexora
+AI-based Smart Logistics and Accessibility Intelligence Platform for the North Eastern Region.
+
+### Weather App
+A weather application that provides real-time weather information using an API.
+
+### Simon Says
+An interactive memory-based game built using HTML, CSS and JavaScript.
+
+## 🌐 Portfolio
+
+🔗 **Live Portfolio:** [Add your live portfolio link here]
+
+## 📫 Connect With Me
+
+- GitHub: [Yashraj24-web](https://github.com/Yashraj24-web)
+- LinkedIn: [https://www.linkedin.com/in/yashraj-singh-559366384?utm_source=share_via&utm_content=profile&utm_medium=member_android]
+
+---
+
+⭐ Feel free to explore my projects and follow my journey as I continue learning and building.
