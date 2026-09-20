@@ -1,0 +1,170 @@
+.character-section {
+  min-height: 100vh;
+  padding: 120px 8%;
+  position: relative;
+  background: #080808;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 15px;
+}
+
+.section-header span {
+  font-size: 10px;
+  color: #666;
+  letter-spacing: 3px;
+}
+
+.section-header p {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: #aaa;
+}
+
+.character-card {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* LEFT */
+
+.profile-side {
+  padding: 60px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.small-label {
+  font-size: 9px;
+  color: #666;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+}
+
+.profile-side h2 {
+  font-size: clamp(45px, 6vw, 85px);
+  letter-spacing: -4px;
+  margin-bottom: 10px;
+}
+
+.character-title {
+  color: #888;
+  letter-spacing: 6px;
+  font-size: 14px;
+}
+
+.profile-details {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profile-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-details span {
+  font-size: 9px;
+  color: #555;
+  letter-spacing: 2px;
+}
+
+.profile-details strong {
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+/* RIGHT */
+
+.stats-side {
+  padding: 60px;
+}
+
+.objective {
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.objective span {
+  font-size: 9px;
+  color: #666;
+  letter-spacing: 3px;
+}
+
+.objective p {
+  max-width: 600px;
+  margin-top: 20px;
+  color: #aaa;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.skills {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.skill-info span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #aaa;
+}
+
+.skill-bar {
+  height: 3px;
+  background: #222;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: #f5f5f5;
+  transition: width 1s ease;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .character-section {
+    padding: 80px 5%;
+  }
+
+  .character-card {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-side {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 40px 30px;
+  }
+
+  .stats-side {
+    padding: 40px 30px;
+  }
+
+  .profile-details {
+    margin-top: 50px;
+  }
+
+}

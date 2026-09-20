@@ -1,0 +1,443 @@
+.journey-section {
+  min-height: 100vh;
+  padding: 140px 7% 100px;
+  background: #080808;
+}
+
+.journey-heading {
+  max-width: 1250px;
+  margin: 0 auto 90px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.journey-heading > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.journey-heading span {
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: #555;
+}
+
+.journey-heading h2 {
+  font-size: clamp(55px, 8vw, 105px);
+  line-height: 0.8;
+  letter-spacing: -6px;
+}
+
+.journey-heading h2 span {
+  display: block;
+  color: #777;
+  font-size: inherit;
+  letter-spacing: -5px;
+  font-weight: 300;
+}
+
+.journey-intro {
+  text-align: right;
+}
+
+.journey-intro p {
+  margin-top: 12px;
+  color: #888;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+/* TRACK */
+
+.journey-track {
+  max-width: 1100px;
+  margin: auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+.journey-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  transform: translateX(-50%);
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #333 8%,
+    #333 92%,
+    transparent
+  );
+}
+
+/* ITEM */
+
+.journey-item {
+  width: 50%;
+  min-height: 190px;
+
+  position: relative;
+
+  border: none;
+  background: transparent;
+
+  color: white;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  text-align: left;
+}
+
+.journey-item.left {
+  justify-content: flex-end;
+  padding-right: 75px;
+}
+
+.journey-item.right {
+  margin-left: 50%;
+  padding-left: 75px;
+}
+
+/* NODE */
+
+.journey-node {
+  position: absolute;
+
+  top: 50%;
+
+  width: 38px;
+  height: 38px;
+
+  transform: translateY(-50%);
+
+  border: 1px solid #444;
+
+  background: #080808;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 8px;
+  letter-spacing: 1px;
+
+  z-index: 2;
+
+  transition: 0.3s;
+}
+
+.journey-item.left .journey-node {
+  right: -19px;
+}
+
+.journey-item.right .journey-node {
+  left: -19px;
+}
+
+.journey-item:hover .journey-node {
+  background: white;
+  color: black;
+  border-color: white;
+
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+/* CARD */
+
+.journey-card {
+  width: min(430px, 100%);
+
+  padding: 28px;
+
+  border: 1px solid rgba(255, 255, 255, 0.11);
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.035),
+    transparent
+  );
+
+  transition: 0.3s;
+}
+
+.journey-item:hover .journey-card {
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-4px);
+}
+
+.journey-card-top {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 7px;
+  letter-spacing: 3px;
+
+  color: #555;
+}
+
+.journey-card h3 {
+  margin-top: 28px;
+
+  font-size: 27px;
+
+  letter-spacing: -1px;
+}
+
+.journey-subtitle {
+  margin-top: 7px;
+
+  color: #aaa;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+}
+
+.journey-description {
+  margin-top: 18px;
+
+  color: #777;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+.journey-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+
+  margin-top: 20px;
+}
+
+.journey-tags span {
+  padding: 6px 8px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #666;
+
+  font-size: 7px;
+
+  letter-spacing: 1px;
+}
+
+/* FOOTER */
+
+.journey-footer {
+  max-width: 1100px;
+
+  margin: 35px auto 0;
+
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 8px;
+
+  letter-spacing: 3px;
+
+  color: #444;
+}
+
+.journey-footer strong {
+  color: #888;
+  font-weight: normal;
+}
+
+/* MODAL */
+
+.journey-modal {
+  position: fixed;
+  inset: 0;
+
+  z-index: 1200;
+
+  background: rgba(0, 0, 0, 0.85);
+
+  backdrop-filter: blur(12px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 25px;
+}
+
+.journey-modal-content {
+  width: min(600px, 100%);
+
+  position: relative;
+
+  padding: 55px;
+
+  background: #0b0b0b;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  animation: journeyModal 0.3s ease;
+}
+
+@keyframes journeyModal {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.journey-close {
+  position: absolute;
+
+  top: 15px;
+  right: 20px;
+
+  background: transparent;
+  border: none;
+
+  color: #666;
+
+  font-size: 28px;
+
+  cursor: pointer;
+}
+
+.journey-close:hover {
+  color: white;
+}
+
+.journey-modal-content > span {
+  font-size: 8px;
+  letter-spacing: 4px;
+  color: #555;
+}
+
+.journey-modal-content h2 {
+  margin-top: 18px;
+
+  font-size: clamp(42px, 7vw, 70px);
+
+  letter-spacing: -4px;
+}
+
+.journey-modal-content h3 {
+  margin-top: 8px;
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  color: #888;
+}
+
+.journey-modal-content p {
+  margin-top: 30px;
+
+  color: #999;
+
+  line-height: 1.8;
+
+  font-size: 14px;
+}
+
+.modal-tag {
+  display: inline-block;
+
+  margin-top: 25px;
+  margin-right: 7px;
+
+  padding: 7px 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: #777;
+
+  font-size: 8px;
+}
+
+.modal-year {
+  display: block;
+
+  margin-top: 30px;
+
+  color: #555;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+  .journey-section {
+    padding: 100px 5% 70px;
+  }
+
+  .journey-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+  .journey-intro {
+    text-align: left;
+  }
+
+  .journey-line {
+    left: 18px;
+  }
+
+  .journey-item,
+  .journey-item.right {
+    width: 100%;
+    margin-left: 0;
+
+    padding-left: 65px;
+    padding-right: 0;
+
+    justify-content: flex-start;
+  }
+
+  .journey-item.left .journey-node,
+  .journey-item.right .journey-node {
+    left: 0;
+    right: auto;
+  }
+
+  .journey-card {
+    width: 100%;
+  }
+
+  .journey-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .journey-modal-content {
+    padding: 40px 25px;
+  }
+}
